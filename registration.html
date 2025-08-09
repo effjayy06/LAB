@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        fieldset { width: 250px; }
+        label { display: inline-block; width: 140px; margin: 1px 0px; }
+    </style>
+</head>
+<body>
+<form method="post" action="registration.php">
+    <fieldset>
+        <legend><b>REGISTRATION</b></legend><br>
+
+        <label>Id :</label><br>
+        <input type="number" name="id"><br>
+
+        <label>Password :</label><br>
+        <input type="password" name="password"><br>
+
+        <label>Confirm Password :</label><br>
+        <input type="password" name="confirm"><br>
+
+        <label>Email :</label><br>
+        <input type="text" name="email"><br>
+
+        <label>Name :</label><br>
+        <input type="text" name="name"><br>
+
+        <label>User type<i>[user/Admin]</i></label><br>
+        <select id="usertype" name="usertype">
+        <option value="admin">Admin</option>
+        <option value="user">User</option>
+        <option value="guest">Guest</option>
+        </select>
+
+        <hr style="border: none; border-top: 2px solid #b5b5b5; margin: 10px 0;">
+
+        <input type="submit" value="Register">
+        <a href="login.html">Login</a>
+    </fieldset>
+
+</form>
+</body>
+</html>
